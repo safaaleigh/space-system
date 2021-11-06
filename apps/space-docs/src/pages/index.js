@@ -6,6 +6,15 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
 
+import {
+  applyPolyfills,
+  defineCustomElements,
+} from '../../../../dist/libs/space-system/loader';
+
+applyPolyfills().then(() => {
+  defineCustomElements();
+});
+
 const features = [
   {
     title: 'Easy to Use',
@@ -80,17 +89,21 @@ function Home() {
         </div>
       </header>
       <main>
-        {features && features.length > 0 && (
-          <section className={styles.features}>
-            <div className="container">
-              <div className="row">
-                {features.map((props, idx) => (
-                  <Feature key={idx} {...props} />
-                ))}
-              </div>
-            </div>
-          </section>
-        )}
+        <section style={{ padding: '0 2rem' }}>
+          <space-grid
+            row
+            gap={2}
+            class="container"
+            direction="column,column,row"
+            style={{ padding: '2rem 0' }}
+          >
+            {features.map((props, idx) => (
+              <space-grid key={idx}>
+                <Feature {...props} />
+              </space-grid>
+            ))}
+          </space-grid>
+        </section>
       </main>
     </Layout>
   );

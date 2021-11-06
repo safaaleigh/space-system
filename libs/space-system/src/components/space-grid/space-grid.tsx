@@ -8,12 +8,22 @@ export class SpaceGrid {
   @Prop() row: boolean = false;
   @Prop() gap: 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 = 1;
   @Prop() flex: string = '1';
+  @Prop() direction: string;
 
   render() {
+    let direction = this.row
+      ? ['row', 'row', 'row']
+      : ['column', 'column', 'column'];
+
+    if (this.direction) direction = this.direction.split(',');
+
+    const [small, medium, large] = direction;
+
     const classes = {
       [`gap-${this.gap}`]: true,
-      'grid-row': this.row,
-      'grid-column': !this.row,
+      [`sm-${small}`]: true,
+      [`md-${medium}`]: true,
+      [`lg-${large}`]: true,
     };
 
     return (

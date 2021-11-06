@@ -1,5 +1,5 @@
 module.exports = {
-  title: 'space-system',
+  title: 'space-system 🚀',
   tagline: 'the space-system design system',
   url: 'https://safaa.studio',
   baseUrl: '/',
@@ -9,12 +9,11 @@ module.exports = {
   organizationName: 'safaaleigh',
   projectName: 'space-system',
   themeConfig: {
+    colorMode: {
+      defaultMode: 'dark',
+    },
     navbar: {
       title: 'space-system',
-      logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
-      },
       items: [
         {
           to: 'docs/',

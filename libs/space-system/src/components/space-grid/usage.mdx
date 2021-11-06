@@ -199,3 +199,28 @@ export const Gap = () => {
 ```
 
 <Gap />
+
+## Responsive
+
+export const Responsive = () => {
+  applyPolyfills().then(() => {
+    defineCustomElements();
+  });
+  return (
+    <space-grid direction="column,column,row">
+      <Container />
+      <Container />
+      <Container />
+    </space-grid>
+  );
+};
+
+```jsx
+<space-grid direction="column,column,row">
+  <space-grid />
+  <space-grid />
+  <space-grid />
+</space-grid>
+```
+
+<Responsive />
