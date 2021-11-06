@@ -8,13 +8,31 @@
     "test": "nx test"
   },
   "private": true,
-  "dependencies": {},
+  "dependencies": {
+    "@docusaurus/core": "^2.0.0-alpha.70",
+    "@docusaurus/preset-classic": "^2.0.0-alpha.70",
+    "@mdx-js/react": "^1.6.21",
+    "clsx": "^1.1.1",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
+    "tslib": "^2.0.0"
+  },
   "devDependencies": {
-    "@nrwl/tao": "13.1.3",
+    "@angular-devkit/schematics": "^13.0.1",
+    "@docusaurus/module-type-aliases": "^2.0.0-beta.9",
     "@nrwl/cli": "13.1.3",
+    "@nrwl/jest": "13.1.3",
+    "@nrwl/tao": "13.1.3",
     "@nrwl/workspace": "13.1.3",
+    "@nx-plus/docusaurus": "^12.2.0",
+    "@nxext/stencil": "^13.1.0",
+    "@stencil/core": "^2.10.0",
+    "@tsconfig/docusaurus": "^1.0.4",
+    "@types/jest": "27.0.2",
     "@types/node": "14.14.33",
-    "typescript": "~4.3.5",
-    "prettier": "^2.3.1"
+    "jest": "26.6.3",
+    "prettier": "^2.3.1",
+    "ts-jest": "26.5.6",
+    "typescript": "^4.4.4"
   }
 }

@@ -1,0 +1,75 @@
+space-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  flex: 1;
+}
+
+space-grid.grid-column.gap-1 > space-grid ~ space-grid {
+  margin-top: calc(1rem * 1);
+}
+
+space-grid.grid-row.gap-1 > space-grid ~ space-grid {
+  margin-left: calc(1rem * 1);
+}
+
+space-grid.grid-column.gap-2 > space-grid ~ space-grid {
+  margin-top: calc(1rem * 2);
+}
+
+space-grid.grid-row.gap-2 > space-grid ~ space-grid {
+  margin-left: calc(1rem * 2);
+}
+
+space-grid.grid-column.gap-3 > space-grid ~ space-grid {
+  margin-top: calc(1rem * 3);
+}
+
+space-grid.grid-row.gap-3 > space-grid ~ space-grid {
+  margin-left: calc(1rem * 3);
+}
+
+space-grid.grid-column.gap-4 > space-grid ~ space-grid {
+  margin-top: calc(1rem * 4);
+}
+
+space-grid.grid-row.gap-4 > space-grid ~ space-grid {
+  margin-left: calc(1rem * 4);
+}
+
+space-grid.grid-column.gap-5 > space-grid ~ space-grid {
+  margin-top: calc(1rem * 5);
+}
+
+space-grid.grid-row.gap-5 > space-grid ~ space-grid {
+  margin-left: calc(1rem * 5);
+}
+
+space-grid.grid-column.gap-6 > space-grid ~ space-grid {
+  margin-top: calc(1rem * 6);
+}
+
+space-grid.grid-row.gap-6 > space-grid ~ space-grid {
+  margin-left: calc(1rem * 6);
+}
+
+space-grid.grid-column.gap-7 > space-grid ~ space-grid {
+  margin-top: calc(1rem * 7);
+}
+
+space-grid.grid-row.gap-7 > space-grid ~ space-grid {
+  margin-left: calc(1rem * 7);
+}
+
+space-grid.grid-column.gap-8 > space-grid ~ space-grid {
+  margin-top: calc(1rem * 8);
+}
+
+space-grid.grid-row.gap-8 > space-grid ~ space-grid {
+  margin-left: calc(1rem * 8);
+}
+
+.grid-row {
+  flex-direction: row;
+  flex-wrap: wrap;
+}

@@ -1,0 +1,201 @@
+---
+id: space-grid-usage
+title: usage
+---
+
+# space-grid
+
+import {
+  applyPolyfills,
+  defineCustomElements,
+} from '../../../../../dist/libs/space-system/loader';
+
+export const Container = (props) => (
+  <space-grid
+    {...props}
+    style={{
+      borderRadius: '.5rem',
+      padding: '1rem',
+      backgroundColor: 'grey',
+      ...props.style,
+    }}
+  ></space-grid>
+);
+
+## Basic
+
+export const Basic = () => {
+  applyPolyfills().then(() => {
+    defineCustomElements();
+  });
+  return (
+    <space-grid>
+      <Container />
+      <Container />
+    </space-grid>
+  );
+};
+
+```jsx
+<space-grid>
+  <space-grid />
+  <space-grid />
+</space-grid>
+```
+
+<Basic />
+
+## Row
+
+export const Row = () => {
+  applyPolyfills().then(() => {
+    defineCustomElements();
+  });
+  return (
+    <space-grid row>
+      <Container />
+      <Container />
+      <Container />
+    </space-grid>
+  );
+};
+
+```jsx
+<space-grid row>
+  <space-grid />
+  <space-grid />
+  <space-grid />
+</space-grid>
+```
+
+<Row />
+
+## Flex
+
+export const Flex = () => {
+  applyPolyfills().then(() => {
+    defineCustomElements();
+  });
+  return (
+    <space-grid row>
+      <Container flex="3" />
+      <Container flex="1" />
+      <Container flex="2" />
+      <Container flex="0 0 50px" />
+    </space-grid>
+  );
+};
+
+```jsx
+<space-grid row>
+  <space-grid flex="3" />
+  <space-grid flex="1" />
+  <space-grid flex="2" />
+  <space-grid flex="0 0 50px" />
+</space-grid>
+```
+
+<Flex />
+
+## Mix
+
+export const Mix = () => {
+  applyPolyfills().then(() => {
+    defineCustomElements();
+  });
+  return (
+    <space-grid row>
+      <Container />
+      <Container />
+      <space-grid>
+        <Container />
+        <Container />
+      </space-grid>
+    </space-grid>
+  );
+};
+
+```jsx
+<space-grid row>
+  <space-grid />
+  <space-grid />
+  <space-grid>
+    <space-grid />
+    <space-grid />
+  </space-grid>
+</space-grid>
+```
+
+<Mix />
+
+## Alignments
+
+export const Alignments = () => {
+  applyPolyfills().then(() => {
+    defineCustomElements();
+  });
+  return (
+    <space-grid>
+      <space-grid row>
+        <Container style={{ height: 100 }} />
+        <Container style={{ alignSelf: 'flex-start' }} />
+        <Container style={{ alignSelf: 'center' }} />
+        <Container style={{ alignSelf: 'flex-end' }} />
+      </space-grid>
+      <space-grid>
+        <Container style={{ alignSelf: 'flex-start' }} />
+        <Container style={{ alignSelf: 'center' }} />
+        <Container style={{ alignSelf: 'flex-end' }} />
+      </space-grid>
+    </space-grid>
+  );
+};
+
+```jsx
+<space-grid>
+  <space-grid row>
+    <space-grid style={{ height: 100 }} />
+    <space-grid style={{ alignSelf: 'flex-start' }} />
+    <space-grid style={{ alignSelf: 'center' }} />
+    <space-grid style={{ alignSelf: 'flex-end' }} />
+  </space-grid>
+  <space-grid>
+    <space-grid style={{ alignSelf: 'flex-start' }} />
+    <space-grid style={{ alignSelf: 'center' }} />
+    <space-grid style={{ alignSelf: 'flex-end' }} />
+  </space-grid>
+</space-grid>
+```
+
+<Alignments />
+
+## Gap
+
+export const Gap = () => {
+  applyPolyfills().then(() => {
+    defineCustomElements();
+  });
+  return (
+    <space-grid row>
+      <Container />
+      <Container />
+      <space-grid gap={2}>
+        <Container />
+        <Container />
+      </space-grid>
+    </space-grid>
+  );
+};
+
+```jsx
+<space-grid row>
+  <space-grid />
+  <space-grid />
+  <space-grid gap={2}>
+    <space-grid />
+    <space-grid />
+  </space-grid>
+</space-grid>
+```
+
+<Gap />

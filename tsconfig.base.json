@@ -14,7 +14,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@space-system/space-system": ["dist/libs/space-system"],
+      "@space-system/space-system/loader": ["dist/libs/space-system/loader"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
