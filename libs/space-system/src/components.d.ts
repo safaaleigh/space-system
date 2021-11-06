@@ -5,12 +5,24 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
+import { JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface SpaceGrid {
         "direction": string;
         "flex": string;
         "gap": 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8;
         "row": boolean;
+    }
+    interface SpaceText {
+        "align"?: 'left' | 'center' | 'right';
+        "as": ElementTypes;
+        "customClassName"?: string;
+        "customStyle"?: JSXBase.HTMLAttributes<E>['style'];
+        "lineHeight"?: 12 | 16 | 20 | 24 | 32 | 40 | 48 | 56;
+        "size": 10 | 12 | 14 | 16 | 20 | 24 | 32 | 40 | 48;
+        "transform"?: 'capitalize' | 'uppercase' | 'lowercase';
+        "weight"?: 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900;
+        "wrap": boolean;
     }
 }
 declare global {
@@ -20,8 +32,15 @@ declare global {
         prototype: HTMLSpaceGridElement;
         new (): HTMLSpaceGridElement;
     };
+    interface HTMLSpaceTextElement extends Components.SpaceText, HTMLStencilElement {
+    }
+    var HTMLSpaceTextElement: {
+        prototype: HTMLSpaceTextElement;
+        new (): HTMLSpaceTextElement;
+    };
     interface HTMLElementTagNameMap {
         "space-grid": HTMLSpaceGridElement;
+        "space-text": HTMLSpaceTextElement;
     }
 }
 declare namespace LocalJSX {
@@ -31,8 +50,20 @@ declare namespace LocalJSX {
         "gap"?: 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8;
         "row"?: boolean;
     }
+    interface SpaceText {
+        "align"?: 'left' | 'center' | 'right';
+        "as"?: ElementTypes;
+        "customClassName"?: string;
+        "customStyle"?: JSXBase.HTMLAttributes<E>['style'];
+        "lineHeight"?: 12 | 16 | 20 | 24 | 32 | 40 | 48 | 56;
+        "size"?: 10 | 12 | 14 | 16 | 20 | 24 | 32 | 40 | 48;
+        "transform"?: 'capitalize' | 'uppercase' | 'lowercase';
+        "weight"?: 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900;
+        "wrap"?: boolean;
+    }
     interface IntrinsicElements {
         "space-grid": SpaceGrid;
+        "space-text": SpaceText;
     }
 }
 export { LocalJSX as JSX };
@@ -40,6 +71,7 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "space-grid": LocalJSX.SpaceGrid & JSXBase.HTMLAttributes<HTMLSpaceGridElement>;
+            "space-text": LocalJSX.SpaceText & JSXBase.HTMLAttributes<HTMLSpaceTextElement>;
         }
     }
 }

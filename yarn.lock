@@ -2185,10 +2185,10 @@
   resolved "https://registry.yarnpkg.com/@polka/url/-/url-1.0.0-next.21.tgz#5de5a2385a35309427f6011992b544514d559aa1"
   integrity sha512-a5Sab1C4/icpTZVzZc5Ghpz88yQtGOyNqYXcZgOssB2uuAr+wF/MvN6bgtW32q7HHrvBki+BsZ0OuNv6EV3K9g==
 
-"@safaaleigh/space-system@^0.0.1":
-  version "0.0.1"
-  resolved "https://npm.pkg.github.com/download/@safaaleigh/space-system/0.0.1/ea8d9784192fb3b1cf937962479bbaa26164fc2b1d92f596d4a9e3614acf0a3f#5031e883be2224dd6d792b6de0af2524c5d4aaf3"
-  integrity sha512-MYz3CZT978ASiX0+YHrBdyJ2TC8c1Tg1Ezd+Nm6YmIqtXLruZHG3IUyq3ya0anDA03FvT3vlwEFm7u/JlBjajw==
+"@safaaleigh/space-system@^0.0.4":
+  version "0.0.4"
+  resolved "https://npm.pkg.github.com/download/@safaaleigh/space-system/0.0.4/bc29ed99ec4e8144a62c4c3c1965ab08f8e204236ee201179a7351ac939630cb#46df7c91ed6fd416f879dcb8436d54132ed4781e"
+  integrity sha512-uj2h3A9yUGOlBNs/ybOeIm2HjWAj7pcFWe5qx5403lI953a1XITrf78mcABl1mLqz7o3mbCHWavcJLr/GvyEjQ==
 
 "@sideway/address@^4.1.0":
   version "4.1.2"

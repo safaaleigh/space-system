@@ -1,6 +1,6 @@
 {
   "name": "@safaaleigh/space-system",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "main": "./dist/index.cjs.js",
   "repository": {
     "url": "git://github.com/safaaleigh/space-system.git"

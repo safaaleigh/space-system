@@ -1,0 +1,110 @@
+---
+id: space-text-usage
+title: usage
+---
+
+import {
+  applyPolyfills,
+  defineCustomElements,
+} from '@safaaleigh/space-system/loader';
+
+# space-text
+
+## Sizes
+
+export const Sizes = () => {
+  applyPolyfills().then(() => {
+    defineCustomElements();
+  });
+  return (
+      <>
+        <space-text size="48">The quick brown fox jumped.</space-text>
+        <space-text size="40">The quick brown fox jumped.</space-text>
+        <space-text size="32">The quick brown fox jumped.</space-text>
+        <space-text size="24">The quick brown fox jumped.</space-text>
+        <space-text size="20">The quick brown fox jumped.</space-text>
+        <space-text size="16">The quick brown fox jumped.</space-text>
+        <space-text size="14">The quick brown fox jumped.</space-text>
+        <space-text size="12">The quick brown fox jumped.</space-text>
+        <space-text size="10">The quick brown fox jumped.</space-text>
+      </>
+  );
+};
+
+```jsx
+<>
+  <space-text size="48">The quick brown fox jumped.</space-text>
+  <space-text size="40">The quick brown fox jumped.</space-text>
+  <space-text size="32">The quick brown fox jumped.</space-text>
+  <space-text size="24">The quick brown fox jumped.</space-text>
+  <space-text size="20">The quick brown fox jumped.</space-text>
+  <space-text size="16">The quick brown fox jumped.</space-text>
+  <space-text size="14">The quick brown fox jumped.</space-text>
+  <space-text size="12">The quick brown fox jumped.</space-text>
+  <space-text size="10">The quick brown fox jumped.</space-text>
+</>
+```
+
+<Sizes />
+
+## Weights
+
+export const Weights = () => {
+  applyPolyfills().then(() => {
+    defineCustomElements();
+  });
+  return (
+      <>
+        <space-text weight="900">The quick brown fox jumped. (900)</space-text>
+        <space-text weight="800">The quick brown fox jumped. (800)</space-text>
+        <space-text weight="700">The quick brown fox jumped. (700)</space-text>
+        <space-text weight="600">The quick brown fox jumped. (600)</space-text>
+        <space-text weight="500">The quick brown fox jumped. (500)</space-text>
+        <space-text weight="400">The quick brown fox jumped. (400)</space-text>
+        <space-text weight="300">The quick brown fox jumped. (300)</space-text>
+        <space-text weight="200">The quick brown fox jumped. (200)</space-text>
+        <space-text weight="100">The quick brown fox jumped. (100)</space-text>
+      </>
+  );
+};
+
+```jsx
+<>
+  <space-text weight="900">The quick brown fox jumped. (900)</space-text>
+  <space-text weight="800">The quick brown fox jumped. (800)</space-text>
+  <space-text weight="700">The quick brown fox jumped. (700)</space-text>
+  <space-text weight="600">The quick brown fox jumped. (600)</space-text>
+  <space-text weight="500">The quick brown fox jumped. (500)</space-text>
+  <space-text weight="400">The quick brown fox jumped. (400)</space-text>
+  <space-text weight="300">The quick brown fox jumped. (300)</space-text>
+  <space-text weight="200">The quick brown fox jumped. (200)</space-text>
+  <space-text weight="100">The quick brown fox jumped. (100)</space-text>
+</>
+```
+
+<Weights />
+
+## Align
+
+export const Align = () => {
+  applyPolyfills().then(() => {
+    defineCustomElements();
+  });
+  return (
+      <>
+        <space-text align="left">The quick brown fox jumped.</space-text>
+        <space-text align="right">The quick brown fox jumped.</space-text>
+        <space-text align="center">The quick brown fox jumped.</space-text>
+      </>
+  );
+};
+
+```jsx
+<>
+  <space-text align="left">The quick brown fox jumped.</space-text>
+  <space-text align="left">The quick brown fox jumped.</space-text>
+  <space-text align="left">The quick brown fox jumped.</space-text>
+</>
+```
+
+<Align />
