@@ -9,7 +9,7 @@ import styles from './styles.module.css';
 import {
   applyPolyfills,
   defineCustomElements,
-} from '../../../../dist/libs/space-system/loader';
+} from '@safaaleigh/space-system/loader';
 
 applyPolyfills().then(() => {
   defineCustomElements();
